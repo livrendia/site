@@ -6,34 +6,41 @@
 }
 
 :root {
-    /* Paleta de Cores Animal Crossing Café - Códigos HEX Exatos */
+    /* Paleta de Cores Animal Crossing - Tons Suaves e Pastel */
     
-    /* Fundo Principal */
-    --main-background: #FFFBF5;         /* Branco Cremoso / Bege Claro */
+    /* Cores Primárias (Fundo/Base) */
+    --cream-white: #FFFBF5;            /* Branco Cremoso */
+    --cream-beige: #F8F4ED;            /* Bege Claro alternativo */
+    --sky-blue-soft: #A8DADC;          /* Azul Céu Suave */
     
-    /* Fundos Secundários */
-    --section-background: #EAD7BF;      /* Areia/Caqui Suave */
-    --card-background: #EAD7BF;         /* Areia/Caqui Suave */
+    /* Cores Secundárias (Elementos de Apoio/Interativos) */
+    --mint-green: #98D7C2;             /* Verde Menta/Folha Clara */
+    --peach-coral: #F9C0A9;            /* Rosa Pêssego/Coral Suave */
     
-    /* Cores de Texto */
-    --main-text-color: #4A3E4E;        /* Marrom Café Escuro */
-    --secondary-text-color: #7A7F8C;   /* Cinza Chumbo Quente */
+    /* Cores de Destaque/Ação */
+    --gold-yellow: #FDD26E;            /* Amarelo Ouro Suave */
+    --navy-blue: #374B5C;              /* Azul Marinho Suave */
     
-    /* Cores de Ação */
-    --primary-action: #9DB89B;          /* Verde Suave */
-    --secondary-action: #B8C4B5;       /* Verde Oliva Suave / Sálvia */
+    /* Neutros */
+    --graphite-gray: #555B6E;          /* Cinza Grafite Suave */
+    --light-gray: #D7D7D7;             /* Cinza Claro */
     
-    /* Elementos de Calma */
-    --calm-color: #A0B9C9;             /* Azul Cinzento Sereno */
-    
-    /* Bordas */
-    --border-light: #E9E1DB;           /* Cinza Claro Sutil */
+    /* Variáveis de Uso Principal */
+    --main-background: var(--cream-white);
+    --section-background: var(--sky-blue-soft);
+    --card-background: var(--cream-beige);
+    --main-text-color: var(--navy-blue);
+    --secondary-text-color: var(--graphite-gray);
+    --primary-action: var(--gold-yellow);
+    --secondary-action: var(--mint-green);
+    --accent-warm: var(--peach-coral);
+    --calm-color: var(--sky-blue-soft);
+    --border-light: var(--light-gray);
     
     /* Variáveis de Compatibilidade */
     --primary-color: var(--main-text-color);
     --secondary-color: var(--secondary-action);
     --accent-color: var(--primary-action);
-    --accent-warm: var(--calm-color);
     --text-primary: var(--main-text-color);
     --text-secondary: var(--secondary-text-color);
     --text-light: var(--secondary-text-color);
@@ -43,27 +50,28 @@
     --background-cream: var(--main-background);
     --background-sand: var(--section-background);
     
-    /* Gradientes Atualizados */
-    --gradient-primary: linear-gradient(135deg, var(--section-background) 0%, var(--secondary-action) 100%);
-    --gradient-accent: linear-gradient(135deg, var(--primary-action) 0%, #B3C8B1 100%);
-    --gradient-warm: linear-gradient(135deg, var(--calm-color) 0%, #B5C9D4 100%);
-    --gradient-sage: linear-gradient(135deg, var(--secondary-action) 0%, #C8D2C5 100%);
+    /* Gradientes Animal Crossing - Suaves e Pastel */
+    --gradient-primary: linear-gradient(135deg, var(--section-background) 0%, var(--mint-green) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--gold-yellow) 0%, #FFE094 100%);
+    --gradient-warm: linear-gradient(135deg, var(--peach-coral) 0%, #FFCBB3 100%);
+    --gradient-mint: linear-gradient(135deg, var(--mint-green) 0%, #B3E5D1 100%);
+    --gradient-sky: linear-gradient(135deg, var(--sky-blue-soft) 0%, #C2E7E9 100%);
     
-    /* Tipografia - Inter + Merriweather */
-    --font-display: 'Inter', sans-serif;          /* Títulos, Headlines, Botões */
-    --font-body: 'Merriweather', serif;           /* Corpo de Texto, Parágrafos */
+    /* Tipografia Animal Crossing - Quicksand + Open Sans */
+    --font-display: 'Quicksand', sans-serif;      /* Títulos, Headlines, Botões */
+    --font-body: 'Open Sans', sans-serif;         /* Corpo de Texto, Parágrafos */
     
-    /* Espaçamentos e Elementos Visuais */
+    /* Espaçamentos com Visual Respirável */
     --section-padding: 80px 0;
     --container-padding: 0 20px;
-    --border-radius: 6px;              /* 4px-8px conforme especificação */
-    --border-radius-small: 4px;        /* Elementos menores */
-    --border-radius-large: 8px;        /* Cards e elementos maiores */
+    --border-radius: 12px;             /* Cantos levemente arredondados */
+    --border-radius-small: 8px;        /* Elementos menores */
+    --border-radius-large: 16px;       /* Cards e elementos maiores */
     
     /* Sombras Sutis e Suaves */
-    --shadow-soft: 0 2px 12px rgba(74, 62, 78, 0.06);     /* Mais sutil */
-    --shadow-medium: 0 4px 20px rgba(74, 62, 78, 0.08);   /* Maior blur, menor opacity */
-    --shadow-floating: 0 8px 32px rgba(74, 62, 78, 0.10); /* Muito suave */
+    --shadow-soft: 0 4px 12px rgba(55, 75, 92, 0.08);     /* Sombras sutis */
+    --shadow-medium: 0 6px 20px rgba(55, 75, 92, 0.12);   /* Sombras médias */
+    --shadow-floating: 0 10px 30px rgba(55, 75, 92, 0.15); /* Sombras flutuantes */
     
     /* Transições Suaves */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -137,7 +145,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary-action);
+    background: var(--gold-yellow);
     transition: var(--transition-smooth);
 }
 
@@ -147,14 +155,14 @@ body {
 
 /* Estilo especial para o link "Trabalhe Conosco" */
 .nav-jobs {
-    background: var(--primary-action);
-    color: white !important;
+    background: var(--gradient-accent);
+    color: var(--navy-blue) !important;
     padding: 8px 16px;
     border-radius: var(--border-radius);
-    font-weight: 500;              /* Medium para botões */
+    font-weight: 600;
     box-shadow: var(--shadow-soft);
     transform: scale(1);
-    transition: var(--transition-smooth);
+    transition: var(--transition-bounce);
     position: relative;
     overflow: hidden;
 }
@@ -173,7 +181,7 @@ body {
 .nav-jobs:hover {
     transform: scale(1.05);
     box-shadow: var(--shadow-medium);
-    color: white !important;
+    color: var(--navy-blue) !important;
 }
 
 .nav-jobs:hover::before {
@@ -273,29 +281,29 @@ body {
 }
 
 .btn-primary {
-    background: var(--primary-action);
-    color: white;
+    background: var(--gradient-accent);
+    color: var(--navy-blue);
     box-shadow: var(--shadow-medium);
     border: none;
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px) scale(1.02);
+    transform: translateY(-3px) scale(1.02);
     box-shadow: var(--shadow-floating);
-    background: #B3C8B1;           /* Tom mais claro do verde no hover */
+    background: linear-gradient(135deg, #FFE094 0%, var(--gold-yellow) 100%);
 }
 
 .btn-secondary {
-    background: var(--secondary-action);
-    color: var(--main-text-color);
-    border: 2px solid var(--secondary-action);
+    background: var(--gradient-warm);
+    color: var(--navy-blue);
+    border: 2px solid var(--peach-coral);
     box-shadow: var(--shadow-soft);
 }
 
 .btn-secondary:hover {
-    background: var(--calm-color);
-    border-color: var(--calm-color);
-    transform: translateY(-2px) scale(1.02);
+    background: var(--gradient-mint);
+    border-color: var(--mint-green);
+    transform: translateY(-3px) scale(1.02);
     box-shadow: var(--shadow-medium);
 }
 
@@ -361,7 +369,7 @@ section {
 
 /* Seção Sobre */
 .about {
-    background: var(--section-background);
+    background: var(--gradient-sky);
 }
 
 .section-content {
@@ -389,8 +397,8 @@ section {
     background: var(--card-background);
     border-radius: var(--border-radius-large);
     box-shadow: var(--shadow-soft);
-    transition: var(--transition-smooth);
-    border: 1px solid var(--border-light);
+    transition: var(--transition-bounce);
+    border: 2px solid transparent;
     position: relative;
     overflow: hidden;
 }
@@ -402,20 +410,20 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--secondary-action);
+    background: var(--gradient-mint);
     opacity: 0;
     transition: var(--transition-smooth);
     z-index: 1;
 }
 
 .feature:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-medium);
-    border-color: var(--secondary-action);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: var(--shadow-floating);
+    border-color: var(--mint-green);
 }
 
 .feature:hover::before {
-    opacity: 0.05;                 /* Mais sutil */
+    opacity: 0.1;
 }
 
 .feature > * {
@@ -446,13 +454,13 @@ section {
 
 /* Seção Impacto */
 .impact {
-    background: var(--secondary-action);
-    color: var(--main-text-color);
+    background: var(--gradient-mint);
+    color: var(--navy-blue);
     position: relative;
 }
 
 .impact .section-title {
-    color: var(--main-text-color);
+    color: var(--navy-blue);
 }
 
 .impact-content {
@@ -870,7 +878,7 @@ html {
 /* Estilos para requisitos opcionais */
 .requirement-item.optional {
     border: 2px dashed var(--primary-action);
-    background: linear-gradient(135deg, rgba(216, 125, 96, 0.05), rgba(160, 185, 201, 0.05));
+    background: linear-gradient(135deg, rgba(110, 147, 179, 0.05), rgba(160, 185, 201, 0.05));
     position: relative;
     border-radius: var(--border-radius-large);
     padding: 20px;
