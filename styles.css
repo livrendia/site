@@ -45,7 +45,7 @@
     
     /* Gradientes Atualizados */
     --gradient-primary: linear-gradient(135deg, var(--section-background) 0%, var(--secondary-action) 100%);
-    --gradient-accent: linear-gradient(135deg, var(--primary-action) 0%, #E89475 100%);
+    --gradient-accent: linear-gradient(135deg, var(--primary-action) 0%, #B3C8B1 100%);
     --gradient-warm: linear-gradient(135deg, var(--calm-color) 0%, #B5C9D4 100%);
     --gradient-sage: linear-gradient(135deg, var(--secondary-action) 0%, #C8D2C5 100%);
     
