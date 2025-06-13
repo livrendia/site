@@ -6,36 +6,42 @@
 }
 
 :root {
-    /* Paleta de Cores Animal Crossing Café */
-    /* Cores Primárias (Fundo/Base - Acolhedora) */
-    --background-cream: #FDF8F3;    /* Creme Quente para fundos de cards */
-    --background-sand: #EAD7BF;     /* Areia/Caqui Suave para cabeçalhos */
+    /* Paleta de Cores Animal Crossing Café - Códigos HEX Exatos */
     
-    /* Cores Secundárias (Elementos de Apoio - Conforto e Natureza) */
-    --green-sage: #B8C4B5;          /* Verde Oliva Suave/Sálvia */
-    --blue-serene: #A0B9C9;         /* Azul Cinzento Sereno */
+    /* Fundo Principal */
+    --main-background: #FFFBF5;         /* Branco Cremoso / Bege Claro */
     
-    /* Cores de Destaque (Botões/Ações - Calor e Convite) */
-    --terracotta: #D87D60;          /* Terracota/Laranja Queimado Suave */
-    --coffee-dark: #4A3E4E;         /* Marrom Café Escuro */
-    --navy-velvet: #3A3F47;         /* Azul-Marinho Aveludado */
+    /* Fundos Secundários */
+    --section-background: #EAD7BF;      /* Areia/Caqui Suave */
+    --card-background: #EAD7BF;         /* Areia/Caqui Suave */
     
-    /* Neutros (Textos Secundários/Bordas) */
-    --gray-warm: #7A7F8C;           /* Cinza Chumbo Quente */
-    --gray-light: #E9E1DB;          /* Cinza Claro Sutil */
+    /* Cores de Texto */
+    --main-text-color: #4A3E4E;        /* Marrom Café Escuro */
+    --secondary-text-color: #7A7F8C;   /* Cinza Chumbo Quente */
     
-    /* Variáveis de Uso (para compatibilidade) */
-    --primary-color: var(--coffee-dark);      /* Texto principal */
-    --secondary-color: var(--green-sage);     /* Elementos de apoio */
-    --accent-color: var(--terracotta);        /* Botões principais */
-    --accent-warm: var(--blue-serene);        /* Botões secundários */
-    --text-primary: var(--coffee-dark);       /* Texto principal */
-    --text-secondary: var(--gray-warm);       /* Texto secundário */
-    --text-light: var(--gray-warm);           /* Texto claro */
-    --background-light: var(--background-cream);  /* Fundo claro */
-    --background-calm: var(--background-sand);    /* Fundo calmo */
-    --background-white: var(--background-cream);
-    --border-light: var(--gray-light);        /* Bordas claras */
+    /* Cores de Ação */
+    --primary-action: #D87D60;          /* Terracota / Laranja Queimado Suave */
+    --secondary-action: #B8C4B5;       /* Verde Oliva Suave / Sálvia */
+    
+    /* Elementos de Calma */
+    --calm-color: #A0B9C9;             /* Azul Cinzento Sereno */
+    
+    /* Bordas */
+    --border-light: #E9E1DB;           /* Cinza Claro Sutil */
+    
+    /* Variáveis de Compatibilidade */
+    --primary-color: var(--main-text-color);
+    --secondary-color: var(--secondary-action);
+    --accent-color: var(--primary-action);
+    --accent-warm: var(--calm-color);
+    --text-primary: var(--main-text-color);
+    --text-secondary: var(--secondary-text-color);
+    --text-light: var(--secondary-text-color);
+    --background-light: var(--section-background);
+    --background-calm: var(--section-background);
+    --background-white: var(--main-background);
+    --background-cream: var(--main-background);
+    --background-sand: var(--section-background);
     
     /* Gradientes Animal Crossing Café */
     --gradient-primary: linear-gradient(135deg, var(--background-sand) 0%, var(--green-sage) 100%);
