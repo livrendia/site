@@ -20,7 +20,7 @@
     --secondary-text-color: #7A7F8C;   /* Cinza Chumbo Quente */
     
     /* Cores de Ação */
-    --primary-action: #D87D60;          /* Terracota / Laranja Queimado Suave */
+    --primary-action: #9DB89B;          /* Verde Suave */
     --secondary-action: #B8C4B5;       /* Verde Oliva Suave / Sálvia */
     
     /* Elementos de Calma */
@@ -107,8 +107,8 @@ body {
 .logo h1 {
     font-family: var(--font-display);
     font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary-color);
+    font-weight: 700;              /* H1 - Bold */
+    color: var(--main-text-color);
     margin: 0;
 }
 
@@ -633,7 +633,7 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--primary-color);
+    background: var(--main-text-color);
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -648,11 +648,12 @@ section {
 .footer-text {
     font-family: var(--font-display);
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 600;              /* H3 - Semi-bold */
 }
 
 .footer-copyright {
     font-size: 0.9rem;
+    font-weight: 300;              /* Light para textos menores */
     opacity: 0.8;
 }
 
@@ -670,15 +671,15 @@ section {
 }
 
 .modal-content {
-    background-color: var(--background-white);
+    background-color: var(--main-background);
     margin: 15% auto;
     padding: 2rem;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-large);
     width: 90%;
     max-width: 500px;
     text-align: center;
     position: relative;
-    box-shadow: var(--shadow-medium);
+    box-shadow: var(--shadow-floating);
 }
 
 .close {
@@ -688,17 +689,18 @@ section {
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-    color: var(--text-light);
+    color: var(--secondary-text-color);
     transition: var(--transition-smooth);
 }
 
 .close:hover {
-    color: var(--primary-color);
+    color: var(--main-text-color);
 }
 
 .modal-content h3 {
     font-family: var(--font-display);
-    color: var(--primary-color);
+    font-weight: 600;              /* H3 - Semi-bold */
+    color: var(--main-text-color);
     margin-bottom: 1rem;
 }
 
@@ -718,7 +720,7 @@ section {
         flex-direction: column;
         padding: 20px;
         box-shadow: var(--shadow-medium);
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
     }
     
     .nav.active {
@@ -737,7 +739,7 @@ section {
     .nav-jobs {
         margin-top: 10px;
         text-align: center;
-        border-radius: 15px;
+        border-radius: var(--border-radius-large);
         padding: 12px 20px;
     }
     
@@ -842,8 +844,8 @@ html {
 
 /* Estilos para cards opcionais na página de vagas */
 .responsibility-card.optional {
-    border: 2px dashed var(--green-sage);
-    background: linear-gradient(135deg, rgba(184, 196, 181, 0.08), rgba(160, 185, 201, 0.08));
+    border: 2px dashed var(--secondary-action);
+    background: linear-gradient(135deg, rgba(184, 196, 181, 0.05), rgba(160, 185, 201, 0.05));
     position: relative;
 }
 
@@ -852,23 +854,23 @@ html {
     position: absolute;
     top: -10px;
     right: 15px;
-    background: var(--green-sage);
+    background: var(--secondary-action);
     color: white;
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 500;              /* Medium */
     padding: 4px 8px;
     border-radius: var(--border-radius-small);
     letter-spacing: 0.5px;
 }
 
 .responsibility-card.optional .card-header h3 {
-    color: var(--coffee-dark);
+    color: var(--main-text-color);
 }
 
 /* Estilos para requisitos opcionais */
 .requirement-item.optional {
-    border: 2px dashed var(--terracotta);
-    background: linear-gradient(135deg, rgba(216, 125, 96, 0.08), rgba(160, 185, 201, 0.08));
+    border: 2px dashed var(--primary-action);
+    background: linear-gradient(135deg, rgba(216, 125, 96, 0.05), rgba(160, 185, 201, 0.05));
     position: relative;
     border-radius: var(--border-radius-large);
     padding: 20px;
@@ -879,15 +881,15 @@ html {
     position: absolute;
     top: -10px;
     right: 15px;
-    background: var(--terracotta);
+    background: var(--primary-action);
     color: white;
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 500;              /* Medium */
     padding: 4px 8px;
     border-radius: var(--border-radius-small);
     letter-spacing: 0.5px;
 }
 
 .requirement-item.optional h3 {
-    color: var(--coffee-dark);
+    color: var(--main-text-color);
 }
