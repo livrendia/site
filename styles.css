@@ -193,7 +193,7 @@ body {
 /* Hero Section */
 .hero {
     background: var(--gradient-primary);
-    color: var(--primary-color);
+    color: var(--coffee-dark);
     padding: 120px 0 80px;
     min-height: 100vh;
     display: flex;
@@ -209,8 +209,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="books" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse"><text x="12.5" y="18" text-anchor="middle" font-size="14" fill="rgba(55,75,92,0.06)">📚</text></pattern></defs><rect width="100" height="100" fill="url(%23books)"/></svg>');
-    opacity: 0.4;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="books" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse"><text x="12.5" y="18" text-anchor="middle" font-size="14" fill="rgba(74,62,78,0.04)">📚</text></pattern></defs><rect width="100" height="100" fill="url(%23books)"/></svg>');
+    opacity: 0.6;
 }
 
 .hero-content {
@@ -228,16 +228,15 @@ body {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.5rem;
-    text-shadow: 0 3px 8px rgba(255, 255, 255, 0.3);
-    color: var(--primary-color);
+    text-shadow: 0 2px 4px rgba(253, 248, 243, 0.3);
+    color: var(--coffee-dark);
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
     line-height: 1.6;
     margin-bottom: 2.5rem;
-    opacity: 0.85;
-    color: var(--text-secondary);
+    color: var(--gray-warm);
 }
 
 .hero-cta {
@@ -379,11 +378,11 @@ section {
     display: flex;
     gap: 1.5rem;
     padding: 2.5rem;
-    background: var(--background-white);
-    border-radius: var(--border-radius);
+    background: var(--background-cream);
+    border-radius: var(--border-radius-large);
     box-shadow: var(--shadow-soft);
-    transition: var(--transition-bounce);
-    border: 3px solid transparent;
+    transition: var(--transition-smooth);
+    border: 1px solid var(--gray-light);
     position: relative;
     overflow: hidden;
 }
@@ -395,20 +394,20 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--gradient-mint);
+    background: var(--gradient-sage);
     opacity: 0;
     transition: var(--transition-smooth);
     z-index: 1;
 }
 
 .feature:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: var(--shadow-floating);
-    border-color: var(--secondary-color);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--green-sage);
 }
 
 .feature:hover::before {
-    opacity: 0.05;
+    opacity: 0.08;
 }
 
 .feature > * {
@@ -439,13 +438,13 @@ section {
 
 /* Seção Impacto */
 .impact {
-    background: var(--gradient-mint);
-    color: var(--primary-color);
+    background: var(--gradient-sage);
+    color: var(--coffee-dark);
     position: relative;
 }
 
 .impact .section-title {
-    color: var(--primary-color);
+    color: var(--coffee-dark);
 }
 
 .impact-content {
@@ -835,8 +834,8 @@ html {
 
 /* Estilos para cards opcionais na página de vagas */
 .responsibility-card.optional {
-    border: 2px dashed var(--accent-color);
-    background: linear-gradient(135deg, rgba(168, 218, 220, 0.1), rgba(152, 215, 194, 0.1));
+    border: 2px dashed var(--green-sage);
+    background: linear-gradient(135deg, rgba(184, 196, 181, 0.08), rgba(160, 185, 201, 0.08));
     position: relative;
 }
 
@@ -845,25 +844,25 @@ html {
     position: absolute;
     top: -10px;
     right: 15px;
-    background: var(--accent-color);
+    background: var(--green-sage);
     color: white;
     font-size: 0.7rem;
     font-weight: 600;
     padding: 4px 8px;
-    border-radius: 10px;
+    border-radius: var(--border-radius-small);
     letter-spacing: 0.5px;
 }
 
 .responsibility-card.optional .card-header h3 {
-    color: var(--primary-color);
+    color: var(--coffee-dark);
 }
 
 /* Estilos para requisitos opcionais */
 .requirement-item.optional {
-    border: 2px dashed var(--secondary-color);
-    background: linear-gradient(135deg, rgba(249, 192, 169, 0.1), rgba(253, 210, 110, 0.1));
+    border: 2px dashed var(--terracotta);
+    background: linear-gradient(135deg, rgba(216, 125, 96, 0.08), rgba(160, 185, 201, 0.08));
     position: relative;
-    border-radius: 15px;
+    border-radius: var(--border-radius-large);
     padding: 20px;
 }
 
@@ -872,15 +871,15 @@ html {
     position: absolute;
     top: -10px;
     right: 15px;
-    background: var(--secondary-color);
+    background: var(--terracotta);
     color: white;
     font-size: 0.7rem;
     font-weight: 600;
     padding: 4px 8px;
-    border-radius: 10px;
+    border-radius: var(--border-radius-small);
     letter-spacing: 0.5px;
 }
 
 .requirement-item.optional h3 {
-    color: var(--primary-color);
+    color: var(--coffee-dark);
 }
