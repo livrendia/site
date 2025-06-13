@@ -282,7 +282,7 @@ body {
 .btn-primary:hover {
     transform: translateY(-2px) scale(1.02);
     box-shadow: var(--shadow-floating);
-    background: #E89475;           /* Tom mais claro no hover */
+    background: #B3C8B1;           /* Tom mais claro do verde no hover */
 }
 
 .btn-secondary {
