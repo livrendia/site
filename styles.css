@@ -6,37 +6,56 @@
 }
 
 :root {
-    /* Paleta de Cores Inspirada em Animal Crossing */
-    --primary-color: #374B5C;     /* Azul Marinho Suave - texto principal */
-    --secondary-color: #98D7C2;   /* Verde Menta - elementos de apoio */
-    --accent-color: #FDD26E;      /* Amarelo Ouro Suave - botões principais */
-    --accent-warm: #F9C0A9;       /* Rosa Pêssego - botões secundários */
-    --text-primary: #374B5C;      /* Azul Marinho Suave */
-    --text-secondary: #555B6E;    /* Cinza Grafite Suave */
-    --text-light: #555B6E;        /* Cinza Grafite Suave */
-    --background-light: #FFFBF5;  /* Branco Cremoso */
-    --background-calm: #A8DADC;   /* Azul Céu Suave */
-    --background-white: #FFFBF5;
-    --border-light: #D7D7D7;      /* Cinza Claro */
+    /* Paleta de Cores Animal Crossing Café */
+    /* Cores Primárias (Fundo/Base - Acolhedora) */
+    --background-cream: #FDF8F3;    /* Creme Quente para fundos de cards */
+    --background-sand: #EAD7BF;     /* Areia/Caqui Suave para cabeçalhos */
     
-    /* Gradientes Animal Crossing */
-    --gradient-primary: linear-gradient(135deg, var(--background-calm) 0%, #89C9CC 100%);
-    --gradient-accent: linear-gradient(135deg, var(--accent-color) 0%, #FFE094 100%);
-    --gradient-warm: linear-gradient(135deg, var(--accent-warm) 0%, #FFCBB3 100%);
-    --gradient-mint: linear-gradient(135deg, var(--secondary-color) 0%, #B3E5D1 100%);
+    /* Cores Secundárias (Elementos de Apoio - Conforto e Natureza) */
+    --green-sage: #B8C4B5;          /* Verde Oliva Suave/Sálvia */
+    --blue-serene: #A0B9C9;         /* Azul Cinzento Sereno */
     
-    /* Tipografia Animal Crossing */
-    --font-display: 'Quicksand', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
+    /* Cores de Destaque (Botões/Ações - Calor e Convite) */
+    --terracotta: #D87D60;          /* Terracota/Laranja Queimado Suave */
+    --coffee-dark: #4A3E4E;         /* Marrom Café Escuro */
+    --navy-velvet: #3A3F47;         /* Azul-Marinho Aveludado */
+    
+    /* Neutros (Textos Secundários/Bordas) */
+    --gray-warm: #7A7F8C;           /* Cinza Chumbo Quente */
+    --gray-light: #E9E1DB;          /* Cinza Claro Sutil */
+    
+    /* Variáveis de Uso (para compatibilidade) */
+    --primary-color: var(--coffee-dark);      /* Texto principal */
+    --secondary-color: var(--green-sage);     /* Elementos de apoio */
+    --accent-color: var(--terracotta);        /* Botões principais */
+    --accent-warm: var(--blue-serene);        /* Botões secundários */
+    --text-primary: var(--coffee-dark);       /* Texto principal */
+    --text-secondary: var(--gray-warm);       /* Texto secundário */
+    --text-light: var(--gray-warm);           /* Texto claro */
+    --background-light: var(--background-cream);  /* Fundo claro */
+    --background-calm: var(--background-sand);    /* Fundo calmo */
+    --background-white: var(--background-cream);
+    --border-light: var(--gray-light);        /* Bordas claras */
+    
+    /* Gradientes Animal Crossing Café */
+    --gradient-primary: linear-gradient(135deg, var(--background-sand) 0%, var(--green-sage) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--terracotta) 0%, #E89475 100%);
+    --gradient-warm: linear-gradient(135deg, var(--blue-serene) 0%, #B5C9D4 100%);
+    --gradient-sage: linear-gradient(135deg, var(--green-sage) 0%, #C8D2C5 100%);
+    
+    /* Tipografia Animal Crossing Café */
+    --font-display: 'Inter', sans-serif;          /* Títulos - Sans-serif humanista */
+    --font-body: 'Merriweather', serif;           /* Corpo - Serifa confortável para leitura */
     
     /* Espaçamentos com Visual Respirável */
     --section-padding: 80px 0;
     --container-padding: 0 20px;
-    --border-radius: 20px;        /* Cantos mais arredondados */
-    --border-radius-small: 12px;  /* Para elementos menores */
-    --shadow-soft: 0 6px 25px rgba(55, 75, 92, 0.08);     /* Sombras suaves */
-    --shadow-medium: 0 10px 35px rgba(55, 75, 92, 0.12);
-    --shadow-floating: 0 15px 40px rgba(55, 75, 92, 0.15);
+    --border-radius: 8px;          /* Cantos levemente arredondados */
+    --border-radius-small: 4px;    /* Para elementos menores */
+    --border-radius-large: 12px;   /* Para cards e elementos maiores */
+    --shadow-soft: 0 2px 8px rgba(74, 62, 78, 0.08);     /* Sombras sutis café */
+    --shadow-medium: 0 4px 16px rgba(74, 62, 78, 0.12);  /* Sombras médias */
+    --shadow-floating: 0 8px 24px rgba(74, 62, 78, 0.15); /* Sombras flutuantes */
     
     /* Transições Suaves */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -120,10 +139,10 @@ body {
 
 /* Estilo especial para o link "Trabalhe Conosco" */
 .nav-jobs {
-    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+    background: var(--gradient-accent);
     color: white !important;
     padding: 8px 16px;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
     font-weight: 600;
     box-shadow: var(--shadow-soft);
     transform: scale(1);
@@ -248,28 +267,28 @@ body {
 
 .btn-primary {
     background: var(--gradient-accent);
-    color: var(--primary-color);
+    color: white;
     box-shadow: var(--shadow-medium);
-    border: 3px solid transparent;
+    border: none;
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px) scale(1.02);
+    transform: translateY(-2px) scale(1.02);
     box-shadow: var(--shadow-floating);
-    background: linear-gradient(135deg, #FFE094 0%, var(--accent-color) 100%);
+    background: linear-gradient(135deg, #E89475 0%, var(--terracotta) 100%);
 }
 
 .btn-secondary {
     background: var(--gradient-warm);
-    color: var(--primary-color);
-    border: 3px solid var(--accent-warm);
+    color: var(--coffee-dark);
+    border: 2px solid var(--blue-serene);
     box-shadow: var(--shadow-soft);
 }
 
 .btn-secondary:hover {
-    background: var(--gradient-mint);
-    border-color: var(--secondary-color);
-    transform: translateY(-3px) scale(1.02);
+    background: var(--gradient-sage);
+    border-color: var(--green-sage);
+    transform: translateY(-2px) scale(1.02);
     box-shadow: var(--shadow-medium);
 }
 
@@ -335,7 +354,7 @@ section {
 
 /* Seção Sobre */
 .about {
-    background: var(--background-light);
+    background: var(--background-sand);
 }
 
 .section-content {
@@ -346,7 +365,7 @@ section {
 
 /* Seção MVP */
 .mvp {
-    background: var(--background-white);
+    background: var(--background-cream);
 }
 
 .mvp-features {
@@ -836,5 +855,32 @@ html {
 }
 
 .responsibility-card.optional .card-header h3 {
+    color: var(--primary-color);
+}
+
+/* Estilos para requisitos opcionais */
+.requirement-item.optional {
+    border: 2px dashed var(--secondary-color);
+    background: linear-gradient(135deg, rgba(249, 192, 169, 0.1), rgba(253, 210, 110, 0.1));
+    position: relative;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.requirement-item.optional::before {
+    content: "OPCIONAL";
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: var(--secondary-color);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+}
+
+.requirement-item.optional h3 {
     color: var(--primary-color);
 }
