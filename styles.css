@@ -43,25 +43,27 @@
     --background-cream: var(--main-background);
     --background-sand: var(--section-background);
     
-    /* Gradientes Animal Crossing Café */
-    --gradient-primary: linear-gradient(135deg, var(--background-sand) 0%, var(--green-sage) 100%);
-    --gradient-accent: linear-gradient(135deg, var(--terracotta) 0%, #E89475 100%);
-    --gradient-warm: linear-gradient(135deg, var(--blue-serene) 0%, #B5C9D4 100%);
-    --gradient-sage: linear-gradient(135deg, var(--green-sage) 0%, #C8D2C5 100%);
+    /* Gradientes Atualizados */
+    --gradient-primary: linear-gradient(135deg, var(--section-background) 0%, var(--secondary-action) 100%);
+    --gradient-accent: linear-gradient(135deg, var(--primary-action) 0%, #E89475 100%);
+    --gradient-warm: linear-gradient(135deg, var(--calm-color) 0%, #B5C9D4 100%);
+    --gradient-sage: linear-gradient(135deg, var(--secondary-action) 0%, #C8D2C5 100%);
     
-    /* Tipografia Animal Crossing Café */
-    --font-display: 'Inter', sans-serif;          /* Títulos - Sans-serif humanista */
-    --font-body: 'Merriweather', serif;           /* Corpo - Serifa confortável para leitura */
+    /* Tipografia - Inter + Merriweather */
+    --font-display: 'Inter', sans-serif;          /* Títulos, Headlines, Botões */
+    --font-body: 'Merriweather', serif;           /* Corpo de Texto, Parágrafos */
     
-    /* Espaçamentos com Visual Respirável */
+    /* Espaçamentos e Elementos Visuais */
     --section-padding: 80px 0;
     --container-padding: 0 20px;
-    --border-radius: 8px;          /* Cantos levemente arredondados */
-    --border-radius-small: 4px;    /* Para elementos menores */
-    --border-radius-large: 12px;   /* Para cards e elementos maiores */
-    --shadow-soft: 0 2px 8px rgba(74, 62, 78, 0.08);     /* Sombras sutis café */
-    --shadow-medium: 0 4px 16px rgba(74, 62, 78, 0.12);  /* Sombras médias */
-    --shadow-floating: 0 8px 24px rgba(74, 62, 78, 0.15); /* Sombras flutuantes */
+    --border-radius: 6px;              /* 4px-8px conforme especificação */
+    --border-radius-small: 4px;        /* Elementos menores */
+    --border-radius-large: 8px;        /* Cards e elementos maiores */
+    
+    /* Sombras Sutis e Suaves */
+    --shadow-soft: 0 2px 12px rgba(74, 62, 78, 0.06);     /* Mais sutil */
+    --shadow-medium: 0 4px 20px rgba(74, 62, 78, 0.08);   /* Maior blur, menor opacity */
+    --shadow-floating: 0 8px 32px rgba(74, 62, 78, 0.10); /* Muito suave */
     
     /* Transições Suaves */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,8 +73,8 @@
 body {
     font-family: var(--font-body);
     line-height: 1.6;
-    color: var(--text-primary);
-    background-color: var(--background-white);
+    color: var(--main-text-color);
+    background-color: var(--main-background);
     overflow-x: hidden;
 }
 
@@ -88,7 +90,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(253, 248, 243, 0.95);
+    background: rgba(255, 251, 245, 0.95);  /* var(--main-background) com transparência */
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-light);
     z-index: 1000;
@@ -231,18 +233,18 @@ body {
 .hero-title {
     font-family: var(--font-display);
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 700;              /* H1 - Bold */
     line-height: 1.2;
     margin-bottom: 1.5rem;
-    text-shadow: 0 2px 4px rgba(253, 248, 243, 0.3);
-    color: var(--coffee-dark);
+    text-shadow: 0 2px 4px rgba(255, 251, 245, 0.3);
+    color: var(--main-text-color);
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
     line-height: 1.6;
     margin-bottom: 2.5rem;
-    color: var(--gray-warm);
+    color: var(--secondary-text-color);
 }
 
 .hero-cta {
@@ -341,8 +343,8 @@ section {
 .section-title {
     font-family: var(--font-display);
     font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--primary-color);
+    font-weight: 600;              /* H2 - Semi-bold */
+    color: var(--main-text-color);
     margin-bottom: 1.5rem;
     text-align: center;
     line-height: 1.3;
