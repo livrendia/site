@@ -264,7 +264,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 16px 32px;
-    border: none;
+    border: 2px solid var(--main-text-color); /* Borda escura para contraste */
     border-radius: var(--border-radius);
     font-family: var(--font-display);
     font-weight: 500;              /* Medium para botões */
@@ -276,33 +276,32 @@ body {
     overflow: hidden;
     text-align: center;
     letter-spacing: 0.5px;
+    background: white;
+    color: var(--main-text-color);
 }
 
 .btn-primary {
-    background: var(--gradient-accent);
-    color: var(--navy-blue);
-    box-shadow: var(--shadow-medium);
-    border: none;
+    background: var(--main-text-color);
+    color: #F7E5C6;
+    border: 2px solid #A6AD8E; /* Verde acinzentado do logo */
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: var(--shadow-floating);
-    background: linear-gradient(135deg, #FFE094 0%, var(--gold-yellow) 100%);
+    background: #A6AD8E;
+    color: #3C332C;
+    border-color: #3C332C;
 }
 
 .btn-secondary {
-    background: var(--gradient-warm);
-    color: var(--navy-blue);
-    border: 2px solid var(--peach-coral);
-    box-shadow: var(--shadow-soft);
+    background: #A6AD8E;
+    color: #3C332C;
+    border: 2px solid #3C332C;
 }
 
 .btn-secondary:hover {
-    background: var(--gradient-mint);
-    border-color: var(--mint-green);
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: var(--shadow-medium);
+    background: #3C332C;
+    color: #F7E5C6;
+    border-color: #A6AD8E;
 }
 
 .btn-large {
