@@ -1,10 +1,10 @@
-# Leia Mais
+# Livrendia
 
-Este repositório contém o site oficial da startup Leia Mais.
+Este repositório contém o site oficial da startup Livrendia.
 
 ## Descrição
 
-"Leia Mais" é uma startup dedicada a promover a leitura e facilitar o acesso a conteúdos relevantes. Este site apresenta informações sobre a empresa, oportunidades e formas de contato.
+"Livrendia" é uma startup dedicada a promover a leitura e facilitar o acesso a conteúdos relevantes. Este site apresenta informações sobre a empresa, oportunidades e formas de contato.
 
 ## Estrutura do Projeto
 
@@ -25,7 +25,7 @@ Basta abrir o arquivo `index.html` em seu navegador para acessar o site localmen
 
 ## Autoria
 
-Desenvolvido pela equipe da startup Leia Mais.
+Desenvolvido pela equipe da startup Livrendia.
 
 ---
 Sinta-se à vontade para contribuir ou sugerir melhorias!

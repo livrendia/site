@@ -1,4 +1,4 @@
-// JavaScript para a Landing Page do Leia+
+// JavaScript para a Landing Page do Livrendia
 
 document.addEventListener('DOMContentLoaded', function() {
     // Elementos do DOM
@@ -198,5 +198,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-console.log('🚀 Leia+ Landing Page carregada com sucesso!');
+console.log('🚀 Livrendia Landing Page carregada com sucesso!');
 console.log('📚 Clique 5 vezes no logo para uma surpresa...');
