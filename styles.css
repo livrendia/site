@@ -367,7 +367,7 @@ section {
 
 /* Seção Sobre */
 .about {
-    background: var(--gradient-sky);
+    background: rgba(255, 255, 255, 0.98);
 }
 
 .section-content {
