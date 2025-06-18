@@ -6,56 +6,37 @@
 }
 
 :root {
-    /* Paleta de Cores Animal Crossing - Tons Suaves e Pastel */
-    
-    /* Cores Primárias (Fundo/Base) */
-    --cream-white: #FFFBF5;            /* Branco Cremoso */
-    --cream-beige: #F8F4ED;            /* Bege Claro alternativo */
-    --sky-blue-soft: #A8DADC;          /* Azul Céu Suave */
-    
-    /* Cores Secundárias (Elementos de Apoio/Interativos) */
-    --mint-green: #98D7C2;             /* Verde Menta/Folha Clara */
-    --peach-coral: #F9C0A9;            /* Rosa Pêssego/Coral Suave */
-    
-    /* Cores de Destaque/Ação */
-    --gold-yellow: #FDD26E;            /* Amarelo Ouro Suave */
-    --navy-blue: #374B5C;              /* Azul Marinho Suave */
-    
-    /* Neutros */
-    --graphite-gray: #555B6E;          /* Cinza Grafite Suave */
-    --light-gray: #D7D7D7;             /* Cinza Claro */
-    
-    /* Variáveis de Uso Principal */
-    --main-background: var(--cream-white);
-    --section-background: var(--sky-blue-soft);
-    --card-background: var(--cream-beige);
-    --main-text-color: var(--navy-blue);
-    --secondary-text-color: var(--graphite-gray);
-    --primary-action: var(--gold-yellow);
-    --secondary-action: var(--mint-green);
-    --accent-warm: var(--peach-coral);
-    --calm-color: var(--sky-blue-soft);
-    --border-light: var(--light-gray);
-    
-    /* Variáveis de Compatibilidade */
+    /* Paleta Livrendia */
+    --main-background: #F7E5C6; /* Bege claro do fundo do logo */
+    --section-background: #F7E5C6;
+    --card-background: #FFF8E6; /* Um tom mais claro para cards */
+    --main-text-color: #3C332C; /* Marrom escuro do logo/texto */
+    --secondary-text-color: #6B635C; /* Marrom médio para textos secundários */
+    --primary-action: #A6AD8E; /* Verde acinzentado do livro */
+    --secondary-action: #D6DCC2; /* Verde acinzentado mais claro */
+    --accent-warm: #A6AD8E; /* Usar o verde como cor de destaque */
+    --calm-color: #F7E5C6;
+    --border-light: #E2D6C2;
+
+    /* Compatibilidade */
     --primary-color: var(--main-text-color);
-    --secondary-color: var(--secondary-action);
+    --secondary-color: var(--primary-action);
     --accent-color: var(--primary-action);
     --text-primary: var(--main-text-color);
     --text-secondary: var(--secondary-text-color);
     --text-light: var(--secondary-text-color);
     --background-light: var(--section-background);
     --background-calm: var(--section-background);
-    --background-white: var(--main-background);
+    --background-white: #FFF8E6;
     --background-cream: var(--main-background);
     --background-sand: var(--section-background);
-    
-    /* Gradientes Animal Crossing - Suaves e Pastel */
-    --gradient-primary: linear-gradient(135deg, var(--section-background) 0%, var(--mint-green) 100%);
-    --gradient-accent: linear-gradient(135deg, var(--gold-yellow) 0%, #FFE094 100%);
-    --gradient-warm: linear-gradient(135deg, var(--peach-coral) 0%, #FFCBB3 100%);
-    --gradient-mint: linear-gradient(135deg, var(--mint-green) 0%, #B3E5D1 100%);
-    --gradient-sky: linear-gradient(135deg, var(--sky-blue-soft) 0%, #C2E7E9 100%);
+
+    /* Gradientes Livrendia */
+    --gradient-primary: linear-gradient(135deg, #F7E5C6 0%, #A6AD8E 100%);
+    --gradient-accent: linear-gradient(135deg, #A6AD8E 0%, #F7E5C6 100%);
+    --gradient-warm: linear-gradient(135deg, #A6AD8E 0%, #D6DCC2 100%);
+    --gradient-mint: linear-gradient(135deg, #A6AD8E 0%, #D6DCC2 100%);
+    --gradient-sky: linear-gradient(135deg, #F7E5C6 0%, #A6AD8E 100%);
     
     /* Tipografia Animal Crossing - Quicksand + Open Sans */
     --font-display: 'Quicksand', sans-serif;      /* Títulos, Headlines, Botões */
